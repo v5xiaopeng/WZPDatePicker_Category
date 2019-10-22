@@ -1,0 +1,7 @@
+WZPDatePicker_Category.xcodeproj/xcuserdata/
+WZPDatePicker_Category.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+WZPDatePicker_Category.xcodeproj/project.xcworkspace/xcuserdata/
