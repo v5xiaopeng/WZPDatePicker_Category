@@ -13,6 +13,8 @@
 		045F0061235EA3D60092E73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045F0060235EA3D60092E73B /* Assets.xcassets */; };
 		045F0064235EA3D60092E73B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F0062235EA3D60092E73B /* LaunchScreen.storyboard */; };
 		045F0067235EA3D60092E73B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F0066235EA3D60092E73B /* main.m */; };
+		045F0077235EA9270092E73B /* CTMediator+WZPDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F0076235EA9270092E73B /* CTMediator+WZPDatePicker.m */; };
+		1255F2E729A38713B13E5EBE /* Pods_WZPDatePicker_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4223F06ADCD9B1A507080C3 /* Pods_WZPDatePicker_Category.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		045F0063235EA3D60092E73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045F0065235EA3D60092E73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045F0066235EA3D60092E73B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045F0075235EA9270092E73B /* CTMediator+WZPDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+WZPDatePicker.h"; sourceTree = "<group>"; };
+		045F0076235EA9270092E73B /* CTMediator+WZPDatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+WZPDatePicker.m"; sourceTree = "<group>"; };
+		2CA9C55743B41B8105086CA4 /* Pods-WZPDatePicker_Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZPDatePicker_Category.release.xcconfig"; path = "Target Support Files/Pods-WZPDatePicker_Category/Pods-WZPDatePicker_Category.release.xcconfig"; sourceTree = "<group>"; };
+		D4223F06ADCD9B1A507080C3 /* Pods_WZPDatePicker_Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WZPDatePicker_Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99507C93BD31975DDB86E12 /* Pods-WZPDatePicker_Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZPDatePicker_Category.debug.xcconfig"; path = "Target Support Files/Pods-WZPDatePicker_Category/Pods-WZPDatePicker_Category.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1255F2E729A38713B13E5EBE /* Pods_WZPDatePicker_Category.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				045F0056235EA3D40092E73B /* WZPDatePicker_Category */,
 				045F0055235EA3D40092E73B /* Products */,
+				424B617C584349A26B89572D /* Pods */,
+				4AABC2A5C324D6B4FC6C67FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,7 @@
 		045F0056235EA3D40092E73B /* WZPDatePicker_Category */ = {
 			isa = PBXGroup;
 			children = (
+				045F006D235EA7F10092E73B /* WZPDatePicker_Category */,
 				045F0057235EA3D40092E73B /* AppDelegate.h */,
 				045F0058235EA3D40092E73B /* AppDelegate.m */,
 				045F005A235EA3D40092E73B /* ViewController.h */,
@@ -71,6 +82,32 @@
 			path = WZPDatePicker_Category;
 			sourceTree = "<group>";
 		};
+		045F006D235EA7F10092E73B /* WZPDatePicker_Category */ = {
+			isa = PBXGroup;
+			children = (
+				045F0075235EA9270092E73B /* CTMediator+WZPDatePicker.h */,
+				045F0076235EA9270092E73B /* CTMediator+WZPDatePicker.m */,
+			);
+			path = WZPDatePicker_Category;
+			sourceTree = "<group>";
+		};
+		424B617C584349A26B89572D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F99507C93BD31975DDB86E12 /* Pods-WZPDatePicker_Category.debug.xcconfig */,
+				2CA9C55743B41B8105086CA4 /* Pods-WZPDatePicker_Category.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4AABC2A5C324D6B4FC6C67FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4223F06ADCD9B1A507080C3 /* Pods_WZPDatePicker_Category.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045F006A235EA3D60092E73B /* Build configuration list for PBXNativeTarget "WZPDatePicker_Category" */;
 			buildPhases = (
+				BEDE2B72287650F5BD268FCE /* [CP] Check Pods Manifest.lock */,
 				045F0050235EA3D40092E73B /* Sources */,
 				045F0051235EA3D40092E73B /* Frameworks */,
 				045F0052235EA3D40092E73B /* Resources */,
+				C02B2EF65022F075455AB9CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,12 +175,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BEDE2B72287650F5BD268FCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WZPDatePicker_Category-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C02B2EF65022F075455AB9CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WZPDatePicker_Category/Pods-WZPDatePicker_Category-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		045F0050235EA3D40092E73B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				045F005C235EA3D40092E73B /* ViewController.m in Sources */,
+				045F0077235EA9270092E73B /* CTMediator+WZPDatePicker.m in Sources */,
 				045F0067235EA3D60092E73B /* main.m in Sources */,
 				045F0059235EA3D40092E73B /* AppDelegate.m in Sources */,
 			);
@@ -281,6 +353,7 @@
 		};
 		045F006B235EA3D60092E73B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99507C93BD31975DDB86E12 /* Pods-WZPDatePicker_Category.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +371,7 @@
 		};
 		045F006C235EA3D60092E73B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA9C55743B41B8105086CA4 /* Pods-WZPDatePicker_Category.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
